@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details</title>
+</head>
+<style>
+ body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            max-width: 600px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="text"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #userDetails {
+            margin-top: 20px;
+        }
+
+        #userDetails p {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        #userDetails p:last-of-type {
+            border-bottom: none;
+        }
+</style>
+<body>
+    <h1>Enter Roll Number</h1>
+    <input type="text" id="rollNumberInput" placeholder="Enter roll number">
+    <button onclick="displayDetails()">Submit</button>
+    <div id="userDetails">
+        <p id="name"></p>
+        <p id="class"></p>
+        <p id="section"></p>
+        <p id="phone"></p>
+        <!-- Add more fields as needed -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
